@@ -7,14 +7,6 @@
     {
       "source": "/edu/FretForm/a190ab17fe/",
       "destination": "/edu/FretForm/a190ab17fe/index.html"
-    },
-    {
-      "source": "/edu/FretForm/a190ab17fe/blog",
-      "destination": "/edu/FretForm/a190ab17fe/blog/index.html"
-    },
-    {
-      "source": "/edu/FretForm/a190ab17fe/blog/",
-      "destination": "/edu/FretForm/a190ab17fe/blog/index.html"
     }
   ],
   "headers": [
