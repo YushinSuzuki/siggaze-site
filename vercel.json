@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    {
+      "source": "/edu/FretForm/a190ab17fe",
+      "destination": "/edu/FretForm/a190ab17fe/index.html"
+    },
+    {
+      "source": "/edu/FretForm/a190ab17fe/",
+      "destination": "/edu/FretForm/a190ab17fe/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/edu/FretForm/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
