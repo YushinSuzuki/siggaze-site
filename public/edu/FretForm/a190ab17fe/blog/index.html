@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="theme-color" content="#f4efe4">
+<title>便利な使い方 — FretForm</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+<style>
+:root{color-scheme:light;--bg:#f4efe4;--panel:#fffcf5;--line:#e6dfcf;--line2:#d6cdb7;--ink:#2a2722;--dim:#7a7264;--faint:#a89f8c;--amb:#d98c2b;
+  --ui:'Nunito','SF Pro Rounded',ui-rounded,'Zen Maru Gothic','Hiragino Maru Gothic ProN',system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);font-weight:500;line-height:1.9;-webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;padding:0 16px;height:44px;
+  background:rgba(255,252,245,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header b{font-size:15px;font-weight:800;letter-spacing:-.01em}
+header em{font-style:normal;color:var(--amb)}
+header span{font-size:11.5px;color:var(--dim);font-weight:700}
+header a{margin-left:auto;font-size:11.5px;font-weight:800;color:var(--dim);text-decoration:none;
+  padding:0 11px;height:26px;display:inline-flex;align-items:center;border:1px solid var(--line2);border-radius:999px;background:var(--panel)}
+header a:hover{color:var(--ink)}
+main{max-width:860px;margin:0 auto;padding:26px 18px 70px}
+h1{font-size:25px;font-weight:800;letter-spacing:-.01em;margin:6px 0 4px}
+.lead{color:var(--dim);margin:0 0 30px;font-size:14px}
+article{margin:0 0 42px;padding:0 0 38px;border-bottom:1px solid var(--line)}
+article:last-of-type{border-bottom:0}
+h2{font-size:18px;font-weight:800;margin:0 0 10px;display:flex;align-items:baseline;gap:10px}
+h2 i{font-style:normal;font-size:11px;font-weight:800;color:var(--amb);border:1px solid #eacfa8;background:#fdf4e6;
+  border-radius:999px;padding:2px 9px;flex:none}
+p{margin:0 0 12px;font-size:14.5px;color:#4a443b}
+b{color:var(--ink);font-weight:800}
+figure{margin:16px 0 6px}
+figure img{width:100%;display:block;border:1px solid var(--line2);border-radius:14px;background:var(--panel);
+  box-shadow:0 2px 6px rgba(70,52,20,.08),0 16px 40px rgba(70,52,20,.10)}
+figcaption{font-size:12px;color:var(--faint);margin-top:8px;font-weight:600}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:620px){.pair{grid-template-columns:1fr}}
+.pair figure{margin:16px 0 6px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin:0 3px 0 6px}
+ul{margin:0 0 12px;padding-left:1.15em;font-size:14.5px;color:#4a443b}
+li{margin:0 0 6px}
+footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font-size:11.5px;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <b>Fret<em>Form</em></b><span>便利な使い方</span>
+  <a id="back" href="../">← 指板にもどる</a>
+</header>
+<main>
+<h1>便利な使い方</h1>
+<p class="lead">FretForm は「どのフレットが何の音か」を暗記するための表ではなく、<b>形が指板の上をどう動くか</b>を見るための画面です。ここでは、実際に手が動くようになる使い方を 6 つ。</p>
+
+<article>
+  <h2><i>0</i>最初の案内は、あとから何度でも</h2>
+  <p>初めて開くと、機能の横に吹き出しが出て順に案内します。最後に「次回から出さない」を外せば毎回出ますし、消したあとも <b>ヘッダーの「使い方」</b>からいつでも呼び出せます。</p>
+  <figure><img src="img/14-tour.png" alt="吹き出しでの案内"><figcaption>案内は 10 ステップ。指している場所が枠で光ります。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>1</i>まず「重ねた状態」を眺める</h2>
+  <p>最初に開くと、ペンタ・CAGED・トライアド・スケールを全部重ねた <b>MIX</b> が 1 段で出ます。情報量は多いですが、ここで見るのは 1 つだけ — <b>赤い丸（ルート）がどこに散らばっているか</b>です。</p>
+  <p>同じ位置に複数の層が来たときは、<b>上の層が丸を塗り、下の層はその外側の輪</b>になります。「この音は CAGED の C フォームであり、同時にペンタの Box 1 でもある」が一目で分かります。</p>
+  <figure><img src="img/01-mix.png" alt="MIX を 1 段で表示した画面"><figcaption>MIX（1段・13F）。丸の中の輪が「下の層にも属している」印。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>2</i>ペンタは Box を 1 つずつ点ける</h2>
+  <p>5 つの Box を全部出すと、指板は色の壁になります。覚えるときは <b>1 つだけ点けて、キーを動かす</b>のが早い。ペンタのスライダーアイコン → <b>型</b> の行で、Box 1〜5 を個別にオン／オフできます。</p>
+  <p>Box 1 だけを出したままキーを半音ずつ上げていくと、同じ形が 1 フレットずつ上がっていくのが見えます。12 回上げると元の位置に戻ります。</p>
+  <figure><img src="img/11-layer-sheet.png" alt="ペンタの設定シート"><figcaption>層の設定。<b>型</b>の行で Box を 1 つずつ。「全部」「なし」もここ。トライアドならここが弦セットになります。</figcaption></figure>
+  <figure><img src="img/02-penta-box1.png" alt="ペンタの Box 1 だけを表示"><figcaption>Box 1 だけ。囲み線の色は Box ごとに固定（1 赤 / 2 緑 / 3 紫 / 4 黄緑 / 5 青）。</figcaption></figure>
+  <p>慣れてきたら全部出します。隣り合う Box が必ず音を共有していること、5 つで指板が一周することが見えます。</p>
+  <figure><img src="img/03-penta-all.png" alt="ペンタの Box を全部表示"><figcaption>Box 1〜5。色は色相環を 5 等分してあるので、隣どうしが最大に離れて見えます。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>3</i>CAGED は「押さえる音」の色で読む</h2>
+  <p>CAGED は囲み線を引きません。<b>開放形で指が押さえる音だけ</b>をフォームの色（C 赤 / A 黄 / G 緑 / E 青 / D マゼンタ）で塗り、開放弦だった音は薄く沈めます。だから色の付いた丸だけを追えば、そのフォームの握りがそのまま見えます。</p>
+  <p>段の上にはフォーム名が出ます。C→A→G→E→D の順にネックを上がり、12 フレットで一周することを確認してください。D と次の C が 2 弦で同じ音を共有するところは、丸が<b>半分ずつ</b>塗られます。</p>
+  <figure><img src="img/04-caged.png" alt="CAGED を単独で表示"><figcaption>CAGED 単独。薄い丸は開放弦（役割を持たない音）。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>4</i>2 段で見比べる</h2>
+  <p>「CAGED の C フォームは、ペンタのどの Box と重なっているのか」を知りたいときは <b>2段</b>。上段・下段をそれぞれ選べます。ネック下に「上段」「下段」の 2 本の列が出るので、それぞれで層を選んでください。同じものを選ぶと入れ替わります。</p>
+  <figure><img src="img/05-two-rows.png" alt="2段表示で CAGED とペンタを見比べる"><figcaption>上段 CAGED / 下段 ペンタ。フレット位置が縦に揃うので、重なりがそのまま見えます。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>5</i>全段で「同じキーの全体像」を持つ</h2>
+  <p><b>全段</b>は、MIX を上に固定して、その下に各層を縦に並べます。2 段目以降は縦にスクロールし、左の列の名前はそれに追従します。左の列は <b>‹</b> で畳めるので、指板を広く取りたいときに使ってください（右の操作列も <b>›</b> で畳めます）。</p>
+  <figure><img src="img/06-all-rows.png" alt="全段表示"><figcaption>全段（13F）。MIX は固定、下の段だけがスクロールします。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>6</i>長調と短調、トライアドの弦セット</h2>
+  <p>右の列の <b>短調</b> に切り替えると、選んだキーを短調の主音として読み直します。音の集合は平行長調と同じまま、<b>度数と色だけが主音基準</b>に移ります（A 短調なら A が赤、C が青の ♭3）。トライアドも短三和音に入れ替わります。</p>
+  <div class="pair">
+    <figure><img src="img/09-major.png" alt="C 長調のトライアド"><figcaption><b>C 長調</b>のトライアド。R・3・5（赤・青・緑）。</figcaption></figure>
+    <figure><img src="img/10-minor.png" alt="A 短調のトライアド"><figcaption><b>A 短調</b>のトライアド。R・♭3・5。音の集まりは同じで、主音と度数だけが移ります。</figcaption></figure>
+  </div>
+  <p>トライアドの弦セットは複数選べます。<b>4-3-2 だけ</b>から始めて、慣れたら 3 弦セットを足すと、同じ和音が指板の上下でどう並ぶかが見えます。点線は設定の「点線」ボタンで消せます。</p>
+  <figure><img src="img/08-triad-sets.png" alt="トライアドの弦セットを全部表示"><figcaption>4 つの弦セットを全部表示。上下に同じ和音が積み上がります。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>7</i>表示設定と、設定の保存</h2>
+  <p>右の列のスライダーのアイコンから<b>表示設定</b>。表示（1段/2段/全段）・音の出し方（音名 / 度数 / 両方）・拡大・MIX 段の表示をまとめて切り替えられます。シートは半透明なので、後ろの指板を見ながら触れます。</p>
+  <p><b>保存</b>の行で、いまの状態に名前を付けて残せます。レイヤー構成・キー・長短・表示・拡大まで丸ごと。名前を押すと戻り、× で消えます。いじり倒しても戻せるので、遠慮なく触ってください。</p>
+  <figure><img src="img/12-view-sheet.png" alt="表示設定のシート"><figcaption>表示設定。左下の「初期状態に戻す」で最初の状態へ。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>8</i>覚え方を足す</h2>
+  <p>ヘッダー下の「＋ レイヤー」か、右の列のレイヤーアイコンから<b>レイヤー一覧</b>。ペンタ・CAGED・トライアド・スケールに加えて、<b>オクターブ</b>（同じ音を指板中で見つける）、<b>Ⅰ·Ⅳ·Ⅴ</b>（キーの中でコードがどこにあるか）、<b>ブルーノート</b>を足せます。</p>
+  <p>並びはドラッグで変えられます。<b>上にあるものほど手前</b>で、MIX では上の層が丸を塗ります。ペンタを主役にしたいときは、ペンタを CAGED より上へ。</p>
+  <figure><img src="img/13-layers-list.png" alt="レイヤー一覧"><figcaption>レイヤー一覧。⋮⋮ を掴んで並べ替え、目のアイコンで MIX に含めるかを切り替え。</figcaption></figure>
+</article>
+
+<article>
+  <h2><i>+</i>覚えておくと楽なこと</h2>
+  <ul>
+    <li>丸の色は最後まで変わりません。<span class="dot" style="background:#e5484d"></span>R ／<span class="dot" style="background:#4d90e8"></span>3rd ／<span class="dot" style="background:#35b87a"></span>5th</li>
+    <li>拡大の数字（24F / 13F / 9F / 6F）は、そのまま<b>画面に入るフレット数</b>です。</li>
+    <li>いじった状態は自動で保存されます。名前を付けて残したいときは、表示設定の「保存」から何個でも。</li>
+    <li>ホーム画面に追加すると、ツールバーの無い全画面で開きます。指板がそのぶん広くなります。</li>
+  </ul>
+</article>
+</main>
+<footer>FretForm — 指板の形で覚える</footer>
+<script>
+// 「指板にもどる」の行き先。公開時はひとつ上の階層（.../FretForm/○○/）だが、
+// 手元のプレビューでは指板が app2.html なので、ひとつ上には何も無い。
+// 開いたときの参照元（指板のページ）が分かればそこへ、分からなければ上を試して、
+// 無ければ app2.html に切り替える。
+(function () {
+  var a = document.getElementById('back');
+  if (!a) return;
+  try {
+    var ref = document.referrer;
+    if (ref && /app2?\.html$|\/$|index\.html$/.test(new URL(ref).pathname) && new URL(ref).origin === location.origin) {
+      a.href = ref;
+      return;
+    }
+  } catch (e) { /* noop */ }
+  // 隣に app2.html があるのは手元のプレビューだけ。公開先には無いので 404 → '../' のまま。
+  fetch('../app2.html', { method: 'HEAD' }).then(function (r) {
+    if (r.ok) a.href = '../app2.html';
+  }).catch(function () { /* '../' のまま */ });
+})();
+</script>
+</body>
+</html>
