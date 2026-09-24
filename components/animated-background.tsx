@@ -66,11 +66,11 @@ function PointCloud() {
         <bufferAttribute attach="attributes-size" count={count} array={sizes} itemSize={1} />
       </bufferGeometry>
       <pointsMaterial
-        size={2}
+        size={5}
         sizeAttenuation={false}
         transparent
         color="#555555"
-        opacity={0.28}
+        opacity={0.38}
         depthWrite={false}
         blending={THREE.NormalBlending}
       />
@@ -109,25 +109,25 @@ function WireframeTerrain() {
       {/* 下部のワイヤーフレーム */}
       <mesh ref={mesh} rotation={[-Math.PI / 2, 0, 0]} position={[0, -4, 0]}>
         <planeGeometry args={[20, 20, 64, 64]} />
-        <meshBasicMaterial color="#777777" wireframe transparent opacity={0.15} />
+        <meshBasicMaterial color="#555555" wireframe transparent opacity={0.4} />
       </mesh>
 
       {/* 上部のワイヤーフレーム */}
       <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 4, 0]}>
         <planeGeometry args={[20, 20, 32, 32]} />
-        <meshBasicMaterial color="#777777" wireframe transparent opacity={0.1} />
+        <meshBasicMaterial color="#666666" wireframe transparent opacity={0.25} />
       </mesh>
 
       {/* 左側のワイヤーフレーム */}
       <mesh rotation={[0, Math.PI / 2, 0]} position={[-4, 0, 0]}>
         <planeGeometry args={[20, 20, 32, 32]} />
-        <meshBasicMaterial color="#777777" wireframe transparent opacity={0.1} />
+        <meshBasicMaterial color="#666666" wireframe transparent opacity={0.25} />
       </mesh>
 
       {/* 右側のワイヤーフレーム */}
       <mesh rotation={[0, -Math.PI / 2, 0]} position={[4, 0, 0]}>
         <planeGeometry args={[20, 20, 32, 32]} />
-        <meshBasicMaterial color="#777777" wireframe transparent opacity={0.1} />
+        <meshBasicMaterial color="#666666" wireframe transparent opacity={0.25} />
       </mesh>
     </>
   )
