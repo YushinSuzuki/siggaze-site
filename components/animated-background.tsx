@@ -66,12 +66,13 @@ function PointCloud() {
         <bufferAttribute attach="attributes-size" count={count} array={sizes} itemSize={1} />
       </bufferGeometry>
       <pointsMaterial
-        size={0.05}
-        sizeAttenuation
+        size={2}
+        sizeAttenuation={false}
         transparent
         color="#555555"
-        opacity={0.4}
-        blending={THREE.AdditiveBlending}
+        opacity={0.28}
+        depthWrite={false}
+        blending={THREE.NormalBlending}
       />
     </points>
   )
