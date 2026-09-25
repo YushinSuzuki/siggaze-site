@@ -53,6 +53,10 @@ const translations = {
 
   "footer.contact.en": "Contact",
   "footer.contact.ja": "お問い合わせ",
+  "footer.privacy.en": "Privacy Policy",
+  "footer.privacy.ja": "プライバシーポリシー",
+  "footer.terms.en": "Terms of Use",
+  "footer.terms.ja": "利用規約",
   "footer.copyright.en": "© 2024 siggaze. All rights reserved.",
   "footer.copyright.ja": "© 2024 siggaze. All rights reserved.",
 }
