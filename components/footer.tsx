@@ -28,7 +28,7 @@ export function Footer() {
             {t("footer.terms")}
           </Link>
           <a
-            href="mailto:contact@siggaze.com"
+            href="mailto:yushin.suzuki@siggaze.com"
             className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
           >
             {t("footer.contact")}
