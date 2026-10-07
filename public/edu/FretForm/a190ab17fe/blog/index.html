@@ -41,7 +41,18 @@ figcaption{font-size:12px;color:var(--faint);margin-top:8px;font-weight:600}
 ul{margin:0 0 12px;padding-left:1.15em;font-size:14.5px;color:#4a443b}
 li{margin:0 0 6px}
 footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font-size:11.5px;font-weight:600}
+.sw{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin:0 4px 0 2px}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding-left:30px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:3px;width:20px;height:20px;border-radius:50%;background:var(--amb);color:#fff;
+  font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;line-height:1}
+.point{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:12px 16px;margin:12px 0 14px}
+.point p:last-child,.point ul:last-child{margin-bottom:0}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 30px;padding:0;list-style:none}
+.toc a{display:inline-block;font-size:12px;font-weight:800;color:var(--dim);text-decoration:none;padding:4px 11px;border:1px solid var(--line2);border-radius:999px;background:var(--panel)}
+.toc a:hover{color:var(--ink)}
 </style>
+
 </head>
 <body>
 <header>
@@ -50,106 +61,121 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
 </header>
 <main>
 <h1>便利な使い方</h1>
-<p class="lead">FretForm は「どのフレットが何の音か」を暗記するための表ではなく、<b>形が指板の上をどう動くか</b>を見るための画面です。ここでは、実際に手が動くようになる使い方を 6 つ。</p>
+<p class="lead">FretForm は、<b>指板は動かさず、キーやコードに合わせて「形」が動く</b>ところを見るための画面です。いちばん役に立つのは、<b>上の段にスケール、下の段にコード進行</b>を並べて、コードを 1 つずつ押していく使い方。最初に開いたときも、この並びになっています。</p>
 
-<article>
-  <h2><i>0</i>最初の案内は、あとから何度でも</h2>
-  <p>初めて開くと、機能の横に吹き出しが出て順に案内します。最後に「次回から出さない」を外せば毎回出ますし、消したあとも <b>ヘッダーの「使い方」</b>からいつでも呼び出せます。</p>
-  <figure><img src="img/14-tour.png" alt="吹き出しでの案内"><figcaption>案内は 10 ステップ。指している場所が枠で光ります。</figcaption></figure>
-</article>
+<ul class="toc">
+  <li><a href="#s1">1. スケールと進行を並べる</a></li>
+  <li><a href="#s2">2. キーの外のコード</a></li>
+  <li><a href="#s3">3. 進行を作り替える</a></li>
+  <li><a href="#s4">4. CAGED とペンタの色</a></li>
+  <li><a href="#s5">5. スケールMIX</a></li>
+  <li><a href="#s6">6. コードMIX</a></li>
+  <li><a href="#s7">7. カードと右のメニュー</a></li>
+  <li><a href="#s8">8. 五度圏としくみ</a></li>
+  <li><a href="#s9">9. 色の約束と保存</a></li>
+</ul>
 
-<article>
-  <h2><i>1</i>まず「重ねた状態」を眺める</h2>
-  <p>最初に開くと、ペンタ・CAGED・トライアド・スケールを全部重ねた <b>MIX</b> が 1 段で出ます。情報量は多いですが、ここで見るのは 1 つだけ — <b>赤い丸（ルート）がどこに散らばっているか</b>です。</p>
-  <p>同じ位置に複数の層が来たときは、<b>上の層が丸を塗り、下の層はその外側の輪</b>になります。「この音は CAGED の C フォームであり、同時にペンタの Box 1 でもある」が一目で分かります。</p>
-  <figure><img src="img/01-mix.png" alt="MIX を 1 段で表示した画面"><figcaption>MIX（1段・13F）。丸の中の輪が「下の層にも属している」印。</figcaption></figure>
-</article>
-
-<article>
-  <h2><i>2</i>ペンタは Box を 1 つずつ点ける</h2>
-  <p>5 つの Box を全部出すと、指板は色の壁になります。覚えるときは <b>1 つだけ点けて、キーを動かす</b>のが早い。ペンタのスライダーアイコン → <b>型</b> の行で、Box 1〜5 を個別にオン／オフできます。</p>
-  <p>Box 1 だけを出したままキーを半音ずつ上げていくと、同じ形が 1 フレットずつ上がっていくのが見えます。12 回上げると元の位置に戻ります。</p>
-  <figure><img src="img/11-layer-sheet.png" alt="ペンタの設定シート"><figcaption>層の設定。<b>型</b>の行で Box を 1 つずつ。「全部」「なし」もここ。トライアドならここが弦セットになります。</figcaption></figure>
-  <figure><img src="img/02-penta-box1.png" alt="ペンタの Box 1 だけを表示"><figcaption>Box 1 だけ。囲み線の色は Box ごとに固定（1 赤 / 2 緑 / 3 紫 / 4 黄緑 / 5 青）。</figcaption></figure>
-  <p>慣れてきたら全部出します。隣り合う Box が必ず音を共有していること、5 つで指板が一周することが見えます。</p>
-  <figure><img src="img/03-penta-all.png" alt="ペンタの Box を全部表示"><figcaption>Box 1〜5。色は色相環を 5 等分してあるので、隣どうしが最大に離れて見えます。</figcaption></figure>
-</article>
-
-<article>
-  <h2><i>3</i>CAGED は「押さえる音」の色で読む</h2>
-  <p>CAGED は囲み線を引きません。<b>開放形で指が押さえる音だけ</b>をフォームの色（C 赤 / A 黄 / G 緑 / E 青 / D マゼンタ）で塗り、開放弦だった音は薄く沈めます。だから色の付いた丸だけを追えば、そのフォームの握りがそのまま見えます。</p>
-  <p>段の上にはフォーム名が出ます。C→A→G→E→D の順にネックを上がり、12 フレットで一周することを確認してください。D と次の C が 2 弦で同じ音を共有するところは、丸が<b>半分ずつ</b>塗られます。</p>
-  <figure><img src="img/04-caged.png" alt="CAGED を単独で表示"><figcaption>CAGED 単独。薄い丸は開放弦（役割を持たない音）。</figcaption></figure>
-</article>
-
-<article>
-  <h2><i>4</i>2 段で見比べる</h2>
-  <p>「CAGED の C フォームは、ペンタのどの Box と重なっているのか」を知りたいときは <b>2段</b>。上段・下段をそれぞれ選べます。ネック下に「上段」「下段」の 2 本の列が出るので、それぞれで層を選んでください。同じものを選ぶと入れ替わります。</p>
-  <figure><img src="img/05-two-rows.png" alt="2段表示で CAGED とペンタを見比べる"><figcaption>上段 CAGED / 下段 ペンタ。フレット位置が縦に揃うので、重なりがそのまま見えます。</figcaption></figure>
-</article>
-
-<article>
-  <h2><i>5</i>全段で「同じキーの全体像」を持つ</h2>
-  <p><b>全段</b>は、MIX を上に固定して、その下に各層を縦に並べます。2 段目以降は縦にスクロールし、左の列の名前はそれに追従します。左の列は <b>‹</b> で畳めるので、指板を広く取りたいときに使ってください（右の操作列も <b>›</b> で畳めます）。</p>
-  <figure><img src="img/06-all-rows.png" alt="全段表示"><figcaption>全段（13F）。MIX は固定、下の段だけがスクロールします。</figcaption></figure>
-</article>
-
-<article>
-  <h2><i>6</i>長調と短調、トライアドの弦セット</h2>
-  <p>右の列の <b>短調</b> に切り替えると、選んだキーを短調の主音として読み直します。音の集合は平行長調と同じまま、<b>度数と色だけが主音基準</b>に移ります（A 短調なら A が赤、C が青の ♭3）。トライアドも短三和音に入れ替わります。</p>
-  <div class="pair">
-    <figure><img src="img/09-major.png" alt="C 長調のトライアド"><figcaption><b>C 長調</b>のトライアド。R・3・5（赤・青・緑）。</figcaption></figure>
-    <figure><img src="img/10-minor.png" alt="A 短調のトライアド"><figcaption><b>A 短調</b>のトライアド。R・♭3・5。音の集まりは同じで、主音と度数だけが移ります。</figcaption></figure>
+<article id="s1">
+  <h2><i>1</i>上の段にスケール、下の段にコード進行を並べる</h2>
+  <p>上の段はペンタ（Box 1〜5）、下の段はコード進行（C – E7 – Am – F – Fm – C）。ネックの下のコードを押すと、下の段にそのコードの<b>押さえ方</b>（音を順につないだ帯）と、ほかの場所の同じ音（小さい丸）が出ます。</p>
+  <p>2 つの段はフレットの位置がそろっているので、<b>いま押さえているコードのすぐ上で、どのスケールの音が弾けるか</b>がそのまま見えます。丸の色は全段で同じ約束です。<span class="sw" style="background:#e5484d"></span>R（ルート）・<span class="sw" style="background:#4d90e8"></span>3rd・<span class="sw" style="background:#35b87a"></span>5th。</p>
+  <figure><img src="img/01-default.jpg" alt="上段にペンタ、下段にコード進行を並べた画面" loading="lazy"><figcaption>最初に開いたときの画面。コードのボタンの下の小さい文字（Ⅰ・Ⅲ7・Ⅵm…）は、キーの中での度数（スケール・ディグリー）。</figcaption></figure>
+  <div class="point">
+    <ul>
+      <li>コードを押すたびに、前後で共通の音はそのまま、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。どの音が動いたかが分かります。</li>
+      <li>キー（右のメニュー）を変えると、形がネックの上を滑って移ります。押さえ方の形はそのまま、場所だけが変わります。</li>
+    </ul>
   </div>
-  <p>トライアドの弦セットは複数選べます。<b>4-3-2 だけ</b>から始めて、慣れたら 3 弦セットを足すと、同じ和音が指板の上下でどう並ぶかが見えます。点線は設定の「点線」ボタンで消せます。</p>
-  <figure><img src="img/08-triad-sets.png" alt="トライアドの弦セットを全部表示"><figcaption>4 つの弦セットを全部表示。上下に同じ和音が積み上がります。</figcaption></figure>
 </article>
 
-<article>
-  <h2><i>7</i>表示設定と、設定の保存</h2>
-  <p>右の列のスライダーのアイコンから<b>表示設定</b>。表示（1段/2段/全段）・音の出し方（音名 / 度数 / 両方）・拡大・MIX 段の表示をまとめて切り替えられます。シートは半透明なので、後ろの指板を見ながら触れます。</p>
-  <p><b>保存</b>の行で、いまの状態に名前を付けて残せます。レイヤー構成・キー・長短・表示・拡大まで丸ごと。名前を押すと戻り、× で消えます。いじり倒しても戻せるので、遠慮なく触ってください。</p>
-  <figure><img src="img/12-view-sheet.png" alt="表示設定のシート"><figcaption>表示設定。左下の「初期状態に戻す」で最初の状態へ。</figcaption></figure>
+<article id="s2">
+  <h2><i>2</i>キーの外のコードが来たら — セカンダリードミナントと借用和音</h2>
+  <p>進行にキーの外のコードがあると、ボタンの縁に色が付きます。<span class="sw" style="background:#0aa2b9"></span><b>青緑＝セカンダリードミナント</b>、<span class="sw" style="background:#5b5fd6"></span><b>藍＝借用和音</b>、<span class="sw" style="background:#7d8fa3"></span>灰青＝どちらでもないキー外のコード。押すと、上の段のスケールもそのコードに合わせて変わります。</p>
+  <p><b>E7（Ⅲ7）を押すと</b>：E7 は次の Am へ解決するドミナント（V/vi）。鳴らしている間は A を主音に一時転調している、とみて、ヘッダーに「一時転調中！ A harmonic minor」、ネック全体が青緑になります。上の段は A を R として読み替え、<b>G を薄く、G# を青緑の丸で</b>足します（A ハーモニックマイナー）。</p>
+  <figure><img src="img/02-secdom.jpg" alt="E7 を選んで一時転調している画面" loading="lazy"><figcaption>ネックの下の説明は 2 行。上がコードの役割、下がスケール側で変わること。</figcaption></figure>
+  <p><b>Fm（Ⅳm）を押すと</b>：Fm は同主短調（C マイナー）から借りてきたコード。キーは C のまま、<b>A を薄く、特徴音 A♭ を藍の丸で</b>足します。「C major の A を特徴音 Ab に替える（＝ C harmonic major）」。</p>
+  <figure><img src="img/03-borrowed.jpg" alt="Fm を選んで借用和音を示している画面" loading="lazy"><figcaption>Ⅳ → Ⅳm → Ⅰ は、ポップスでよく出る借用和音の使い方。</figcaption></figure>
+  <div class="point">
+    <p><b>どうやって見分けているか</b></p>
+    <ul>
+      <li>ドミナントの形（長 3 度＋短 7 度など）で、<b>次のコードが 5 度下に解決</b>していればセカンダリードミナント。</li>
+      <li>同じ主音の別の旋法（長調なら同主短調など）の音だけでできていれば借用和音。</li>
+      <li>解決しないドミナントもセカンダリードミナントとして扱います（偽終止など）。裏コードのように型どおりでないものは「キー外」とだけ示します。</li>
+    </ul>
+  </div>
 </article>
 
-<article>
-  <h2><i>8</i>覚え方を足す</h2>
-  <p>ヘッダー下の「＋ レイヤー」か、右の列のレイヤーアイコンから<b>レイヤー一覧</b>。ペンタ・CAGED・トライアド・スケールに加えて、<b>オクターブ</b>（同じ音を指板中で見つける）、<b>Ⅰ·Ⅳ·Ⅴ</b>（キーの中でコードがどこにあるか）、<b>ブルーノート</b>を足せます。</p>
-  <p>並びはドラッグで変えられます。<b>上にあるものほど手前</b>で、MIX では上の層が丸を塗ります。ペンタを主役にしたいときは、ペンタを CAGED より上へ。</p>
-  <figure><img src="img/13-layers-list.png" alt="レイヤー一覧"><figcaption>レイヤー一覧。⋮⋮ を掴んで並べ替え、目のアイコンで MIX に含めるかを切り替え。</figcaption></figure>
+<article id="s3">
+  <h2><i>3</i>進行を自分の曲に作り替える</h2>
+  <p>ネックの下の<b>＋</b>を押すと、進行の編集が開きます。</p>
+  <ol class="steps">
+    <li><b>いまの進行</b>：押すとそのコードを出します。<b>×</b> で消せます。</li>
+    <li><b>コードを足す</b>：ルート（12 個、度数つき）を選んでから、種類（メジャー・マイナー・7th・sus・9th・13th など 20 種類）を押すと、進行の最後に足されます。</li>
+  </ol>
+  <figure><img src="img/04-prog-sheet.jpg" alt="進行の編集画面" loading="lazy"><figcaption>点線より上が「消す」、下が「足す」。続けて何個でも足せます。閉じるのは「完了」。</figcaption></figure>
+  <p>押さえ方は、ルートを 6・5・4 弦に置いたバレーの形と、ナット近くの開放コード（C なら x32010、C7 なら x32310 など）。帯の色はルートの弦ごとに変わります。</p>
 </article>
 
-<article>
-  <h2><i>+</i>覚えておくと楽なこと</h2>
+<article id="s4">
+  <h2><i>4</i>CAGED とペンタは同じ色で対応している</h2>
+  <p>ペンタの 5 つの Box は、それぞれ CAGED のどれか 1 つのフォームの上に乗っています（どのキーでも同じ対応）。そこで<b>同じ場所の Box とフォームを同じ色</b>にしています。</p>
+  <p><span class="sw" style="background:#f0953a"></span>C＝Box 4、<span class="sw" style="background:#f2c94c"></span>A＝Box 5、<span class="sw" style="background:#f285b5"></span>G＝Box 1、<span class="sw" style="background:#a28ae8"></span>E＝Box 2、<span class="sw" style="background:#c99a6b"></span>D＝Box 3。CAGED の色は、R・3rd・5th の赤・青・緑と取り違えない色にしてあります。</p>
+  <figure><img src="img/05-caged-penta.jpg" alt="上段 CAGED、下段ペンタを並べた画面" loading="lazy"><figcaption>上段に CAGED、下段にペンタ/BOX。同じ色が縦にそろいます。ネックの下の文字がフォーム名、番号のボタンで Box を出し入れ。</figcaption></figure>
+</article>
+
+<article id="s5">
+  <h2><i>5</i>スケールMIX — 地図を 1 枚に重ねる</h2>
+  <p>目を開けてある覚え方を全部重ねたのが<b>スケールMIX</b>。最初は CAGED・ペンタ/BOX・トライアドの 3 つ。カードの並びがそのまま重なりの順（左ほど手前）で、⋮ を掴んで横に動かすと入れ替わります。</p>
+  <p>同じ位置に 2 つ以上の音が来たときは、<b>手前の段が丸を塗り、奥の段は外側の輪</b>になります。輪の色で「この音はペンタの R でもある」が分かります。</p>
+  <figure><img src="img/06-scalemix.jpg" alt="上段スケールMIX、下段コード進行の画面" loading="lazy"><figcaption>上段にスケールMIX、下段にコード進行。地図の上でコードの音を追えます。</figcaption></figure>
+</article>
+
+<article id="s6">
+  <h2><i>6</i>コードMIX — 同じコードの押さえ方を重ねる</h2>
+  <p>ダイア系の覚え方（ダイアトニック・ドロップ2・4 度積み・パワー・シェル）は<b>コードMIX</b>に重なります。コードを選ぶボタンは全部の段で同期するので、重ねると必ず同じコードどうし。<b>パワーコードはバレーの芯、シェルは 7th の骨格</b>…と、形の入れ子が見えます。</p>
+  <p>押さえ方は線の種類で見分けます：太い帯＝ダイア、二重線＝ドロップ2、細い線＝シェル、細い破線＝パワー、点線＝4 度積み（ネックの下に見本）。</p>
+  <figure><img src="img/07-chordmix.jpg" alt="コードMIX でダイアと 4 度積みを重ねた画面" loading="lazy"><figcaption>F（Ⅳ）を選んだところ。上段がコードMIX（ダイア＋4 度積み）、下段がダイアだけ。</figcaption></figure>
+</article>
+
+<article id="s7">
+  <h2><i>7</i>カードと右のメニュー</h2>
   <ul>
-    <li>丸の色は最後まで変わりません。<span class="dot" style="background:#e5484d"></span>R ／<span class="dot" style="background:#4d90e8"></span>3rd ／<span class="dot" style="background:#35b87a"></span>5th</li>
-    <li>拡大の数字（24F / 13F / 9F / 6F）は、そのまま<b>画面に入るフレット数</b>です。</li>
-    <li>いじった状態は自動で保存されます。名前を付けて残したいときは、表示設定の「保存」から何個でも。</li>
-    <li>ホーム画面に追加すると、ツールバーの無い全画面で開きます。指板がそのぶん広くなります。</li>
+    <li><b>▲▼</b>：そのカードを上段・下段に出します。</li>
+    <li><b>目</b>：スケールMIX／コードMIX に重ねるかどうか（進行は重ねないので目がありません）。</li>
+    <li><b>⋮</b>：掴んで横に動かすと並べ替え（＝重なりの順）。並べ替えはまとまりの中だけ。</li>
+    <li><b>カードの色</b>は種類（<span class="sw" style="background:#2f8fb8"></span>音階・<span class="sw" style="background:#c8642e"></span>コード・<span class="sw" style="background:#7a62c9"></span>目印・<span class="sw" style="background:#c23f7c"></span>進行）、<b>名前の下の線</b>はネック上で使う色の見本です。</li>
+    <li>右のメニューには、キー・長調／短調・拡大・五度圏としくみ、その下に<b>いまの上段と下段の名前</b>と、入れ替えボタン（⇅）。</li>
+    <li>下の列は 2 段階でしまえます。1 回目で ▲▼ が隠れ、2 回目で全部隠れます（出すときは 1 回）。</li>
   </ul>
+  <figure><img src="img/09-cards.jpg" alt="カードの列と右のメニュー" loading="lazy"><figcaption>横に続きがあるときは、端がぼけて ‹ › のボタンが出ます。</figcaption></figure>
+</article>
+
+<article id="s8">
+  <h2><i>8</i>五度圏としくみ</h2>
+  <p>右のメニューの「五度圏としくみ」で開く窓。五度圏は外から <b>長調のキー／度数／平行短調／度数</b>、真ん中にいまのキー。光っている 6 つが、そのキーのダイアトニック・コードです。輪をタップするとキーが変わります。</p>
+  <p>下の「コードの種類が決まるしくみ」は、音階の半音の場所と、3 度を積んだときの長短の関係から、なぜ Ⅰ は maj7、Ⅴ は 7th、Ⅶ は m7♭5 になるのかを 1 枚で見せる図です。</p>
+  <figure><img src="img/08-circle.jpg" alt="五度圏としくみの窓" loading="lazy"><figcaption>窓は掴んで動かせます。盤を見ながら確かめるための窓です。</figcaption></figure>
+</article>
+
+<article id="s9">
+  <h2><i>9</i>色の約束と、保存</h2>
+  <ul>
+    <li><span class="sw" style="background:#e5484d"></span>赤・<span class="sw" style="background:#4d90e8"></span>青・<span class="sw" style="background:#35b87a"></span>緑は、R・3rd・5th だけの色です。</li>
+    <li>キーの外の音とコードは寒色：<span class="sw" style="background:#0aa2b9"></span>青緑＝一時転調（セカンダリードミナント）、<span class="sw" style="background:#5b5fd6"></span>藍＝借用和音の特徴音。</li>
+    <li>右下の道具の「表示設定」では、丸の文字（音名／度数／両方）を選べます。<b>いまの設定を保存</b>しておけば、あとで呼び出せます。<b>初期状態に戻す</b>で最初の並びに戻ります。</li>
+    <li>保存先は<b>この端末のブラウザの中だけ</b>です（サーバーには送りません）。</li>
+  </ul>
+  <p>迷ったら、ヘッダーの「使い方」で画面の案内（ツアー）をいつでも呼び出せます。</p>
 </article>
 </main>
 <footer>FretForm — 指板の形で覚える</footer>
 <script>
-// 「指板にもどる」の行き先。公開時はひとつ上の階層（.../FretForm/○○/）だが、
-// 手元のプレビューでは指板が app2.html なので、ひとつ上には何も無い。
-// 開いたときの参照元（指板のページ）が分かればそこへ、分からなければ上を試して、
-// 無ければ app2.html に切り替える。
-(function () {
-  var a = document.getElementById('back');
-  if (!a) return;
-  try {
-    var ref = document.referrer;
-    if (ref && /app2?\.html$|\/$|index\.html$/.test(new URL(ref).pathname) && new URL(ref).origin === location.origin) {
-      a.href = ref;
-      return;
-    }
-  } catch (e) { /* noop */ }
-  // 隣に app2.html があるのは手元のプレビューだけ。公開先には無いので 404 → '../' のまま。
-  fetch('../app2.html', { method: 'HEAD' }).then(function (r) {
-    if (r.ok) a.href = '../app2.html';
-  }).catch(function () { /* '../' のまま */ });
-})();
+  // 「指板にもどる」：この頁が …/blog でも …/blog/ でも、アプリのディレクトリへ戻す
+  (function () {
+    var a = document.getElementById('back');
+    if (!a) return;
+    a.href = location.pathname.replace(/blog\/?(index\.html)?$/, '');
+  })();
 </script>
 </body>
 </html>
