@@ -2,6 +2,10 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<script>
+  // サイトは …/blog（末尾の / なし）で表示するので、相対の img/ が 1 つ上を指してしまう。そのときは基準を補う
+  (function () { var p = location.pathname; if (!/\/$/.test(p) && !/\.html?$/.test(p)) document.write('<base href="' + p + '/">'); })();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="theme-color" content="#f4efe4">
