@@ -35,7 +35,7 @@ h2 i{font-style:normal;font-size:11px;font-weight:800;color:var(--amb);border:1p
 p{margin:0 0 12px;font-size:14.5px;color:#4a443b}
 b{color:var(--ink);font-weight:800}
 figure{margin:16px 0 6px}
-figure img{width:100%;display:block;border:1px solid var(--line2);border-radius:14px;background:var(--panel);
+figure img,figure video{width:100%;height:auto;display:block;border:1px solid var(--line2);border-radius:14px;background:var(--panel);
   box-shadow:0 2px 6px rgba(70,52,20,.08),0 16px 40px rgba(70,52,20,.10)}
 figcaption{font-size:12px;color:var(--faint);margin-top:8px;font-weight:600}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -93,7 +93,7 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
   <h2><i>1</i>まず 1 つの形を見る — ペンタの Box 1</h2>
   <p>指板の丸は、そのキーで使う音です。丸の色は役割で決まっていて、<span class="sw" style="background:#e5484d"></span>赤＝R（ルート＝主音）、<span class="sw" style="background:#4d90e8"></span>青＝3rd、<span class="sw" style="background:#35b87a"></span>緑＝5th。色の無い丸はそれ以外の音です。丸の中の文字は音名と度数（C<b>R</b>、E<b>3</b>…）。</p>
   <p>ペンタの枠は、よく使う 5 つの押さえる場所（Box 1〜5）です。ネックの下の番号を押すと、Box を 1 つずつ表示・非表示にできます。<b>最初は 1 つだけ出して覚える</b>のが早道です。</p>
-  <figure><img src="img/00-box1.jpg" alt="ペンタの Box 1 だけを出した画面" loading="lazy"><figcaption>C キーで Box 1 だけを出したところ。赤い R（C）の位置が手がかり。</figcaption></figure>
+  <figure><video src="img/s1-key.mp4" poster="img/s1-key.jpg" autoplay muted loop playsinline preload="auto" aria-label="キーを変えると Box 1 が横に滑る動画"></video><figcaption>Box 1 だけを出して、キーを C → D → E → D → C と変えたところ。形はそのままで、場所だけが横に滑ります。赤い R の位置が手がかり。</figcaption></figure>
   <div class="point">
     <ul>
       <li>右のメニューでキーを変えると、指板はそのままで、<b>形が横に滑って</b>新しいキーの場所へ移ります。形はそのまま、場所だけが変わる——これがこの画面のいちばん大事な見え方です。</li>
@@ -130,14 +130,14 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
   <h2><i>5</i>スケールと進行を並べる</h2>
   <p>ここまでの組み合わせです。<b>上の段にペンタ、下の段にコード進行</b>（最初に開いたときの並び）。進行は C – E7 – Am – F – Fm – C。ネックの下のコードを押すと、下の段にそのコードの押さえ方と、ほかの場所の同じ音（小さい丸）が出ます。</p>
   <p>2 段はフレットがそろっているので、<b>いま押さえているコードのすぐ上で、どのスケールの音が弾けるか</b>がそのまま見えます。コードを押すたびに、前後で共通の音はそのまま、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。</p>
-  <figure><img src="img/01-default.jpg" alt="上段にペンタ、下段にコード進行を並べた画面" loading="lazy"><figcaption>弾きながらコードを 1 つずつ押していく使い方。</figcaption></figure>
+  <figure><video src="img/s5-prog.mp4" poster="img/s5-prog.jpg" autoplay muted loop playsinline preload="auto" aria-label="進行のコードを順に押していく動画"></video><figcaption>C → E7 → Am → F → Fm → C と順に押したところ。共通の音は残り、ほかの音はゆっくり入れ替わります。</figcaption></figure>
 </article>
 
 <article id="s6">
   <h2><i>6</i>キーの外のコード — セカンダリードミナントと借用和音</h2>
   <p>進行にキーの外のコードがあると、ボタンの縁に色が付きます。<span class="sw" style="background:#0aa2b9"></span><b>青緑＝セカンダリードミナント</b>、<span class="sw" style="background:#5b5fd6"></span><b>藍＝借用和音</b>、<span class="sw" style="background:#7d8fa3"></span>灰青＝どちらでもないキー外のコード。押すと、上の段のスケールもそのコードに合わせて変わります。</p>
   <p><b>E7（Ⅲ7）</b>：次の Am へ解決するドミナント（V/vi）。鳴らしている間は A を主音に一時転調している、とみて、ヘッダーに「一時転調中！ A harmonic minor」、ネック全体が青緑になります。上の段は A を R として読み替え、<b>G を薄く、G# を青緑の丸で</b>足します。</p>
-  <figure><img src="img/02-secdom.jpg" alt="E7 を選んで一時転調している画面" loading="lazy"><figcaption>ネックの下の説明は 2 行。上がコードの役割、下がスケール側で変わること。</figcaption></figure>
+  <figure><video src="img/s6-secdom.mp4" poster="img/s6-secdom.jpg" autoplay muted loop playsinline preload="auto" aria-label="E7 を押すと一時転調の色になる動画"></video><figcaption>C → E7 → Am と押したところ。E7 の間だけネックが青緑になり、G が薄れて G# が出ます。ネックの下の説明は 2 行で、上がコードの役割、下がスケール側で変わること。</figcaption></figure>
   <p><b>Fm（Ⅳm）</b>：同主短調（C マイナー）から借りてきたコード。キーは C のまま、<b>A を薄く、特徴音 A♭ を藍の丸で</b>足します（C major の A を A♭ に替える＝ C harmonic major）。</p>
   <figure><img src="img/03-borrowed.jpg" alt="Fm を選んで借用和音を示している画面" loading="lazy"><figcaption>Ⅳ → Ⅳm → Ⅰ は、ポップスでよく出る借用和音の使い方。</figcaption></figure>
   <div class="point">
@@ -169,7 +169,8 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
     <li>下の列は 2 段階でしまえます。1 回目で ▲▼ が隠れ、2 回目で全部隠れます（出すときは 1 回）。横に続きがあるときは、端がぼけて ‹ › のボタンが出ます。</li>
   </ul>
   <figure><img src="img/09-cards.jpg" alt="カードの列と右のメニュー" loading="lazy"><figcaption>カードの列（下）と右のメニュー。</figcaption></figure>
-  <p><b>五度圏としくみ</b>（右のメニュー）：五度圏は外から長調のキー／度数／平行短調／度数、真ん中にいまのキー。光っている 6 つが、そのキーのダイアトニック・コードです。下の「コードの種類が決まるしくみ」は、なぜ Ⅰ は maj7、Ⅴ は 7th、Ⅶ は m7♭5 になるのかを 1 枚で見せる図です。</p>
+  <figure><video src="img/s8-bar.mp4" poster="img/s8-bar.jpg" autoplay muted loop playsinline preload="auto" aria-label="下の列を 2 段階でしまう動画"></video><figcaption>盤のすぐ下のつまみを押したところ。1 回目で ▲▼ が隠れ、2 回目で全部隠れ、3 回目で全部戻ります。</figcaption></figure>
+  <p><b>五度圏としくみ</b>（右のメニュー）：五度圏は外から長調のキー／度数／平行短調／度数、真ん中にいまのキー。光っている 6 つが、そのキーのダイアトニック・コードです。上の「キー」に切り替えると、各キーの ♯・♭ の数と、そのキーで新しく増える音が出ます。時計回りに 1 つ進むごとに ♯ が「ファドソレラシミ」（F C G D A E B）の順に 1 つずつ増え、反時計回りでは ♭ が「シミラレソドファ」（B E A D G C F）の順に増えます。下の「コードの種類が決まるしくみ」は、なぜ Ⅰ は maj7、Ⅴ は 7th、Ⅶ は m7♭5 になるのかを 1 枚で見せる図です。</p>
   <figure><img src="img/08-circle.jpg" alt="五度圏としくみの窓" loading="lazy"><figcaption>窓は掴んで動かせます。輪をタップするとキーが変わります。</figcaption></figure>
   <div class="point">
     <ul>
@@ -188,6 +189,21 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
     if (!a) return;
     a.href = location.pathname.replace(/blog\/?(index\.html)?$/, '');
   })();
+</script>
+<script>
+// 動画は画面に入ったら再生、外れたら止める。自動再生を断られる環境（省電力モードなど）では再生ボタンを出す
+(function () {
+  var vs = document.querySelectorAll('video');
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      var v = e.target;
+      if (e.isIntersecting) { v.muted = true; var p = v.play(); if (p && p.catch) p.catch(function () { v.controls = true; }); }
+      else v.pause();
+    });
+  }, { threshold: 0.3 });
+  vs.forEach(function (v) { io.observe(v); });
+})();
 </script>
 </body>
 </html>
