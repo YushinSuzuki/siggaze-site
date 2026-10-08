@@ -37,6 +37,9 @@ b{color:var(--ink);font-weight:800}
 figure{margin:16px 0 6px}
 figure img,figure video{width:100%;height:auto;display:block;border:1px solid var(--line2);border-radius:14px;background:var(--panel);
   box-shadow:0 2px 6px rgba(70,52,20,.08),0 16px 40px rgba(70,52,20,.10)}
+h3{font-size:15px;font-weight:800;margin:28px 0 6px;padding-left:10px;border-left:3px solid var(--amb);line-height:1.5}
+h2+h3{margin-top:14px}
+figure.close{max-width:560px}
 figcaption{font-size:12px;color:var(--faint);margin-top:8px;font-weight:600}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:620px){.pair{grid-template-columns:1fr}}
@@ -91,55 +94,95 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
 
 <article id="s1">
   <h2><i>1</i>まず 1 つの形を見る — ペンタの Box 1</h2>
+  <h3>丸の色と文字</h3>
   <p>指板の丸は、そのキーで使う音です。丸の色は役割で決まっていて、<span class="sw" style="background:#e5484d"></span>赤＝R（ルート＝主音）、<span class="sw" style="background:#4d90e8"></span>青＝3rd、<span class="sw" style="background:#35b87a"></span>緑＝5th。色の無い丸はそれ以外の音です。丸の中の文字は音名と度数（C<b>R</b>、E<b>3</b>…）。</p>
-  <p>ペンタの枠は、よく使う 5 つの押さえる場所（Box 1〜5）です。ネックの下の番号を押すと、Box を 1 つずつ表示・非表示にできます。<b>最初は 1 つだけ出して覚える</b>のが早道です。</p>
-  <figure><video src="img/s1-key.mp4" poster="img/s1-key.jpg" autoplay muted loop playsinline preload="auto" aria-label="キーを変えると Box 1 が横に滑る動画"></video><figcaption>Box 1 だけを出して、キーを C → D → E → D → C と変えたところ。形はそのままで、場所だけが横に滑ります。赤い R の位置が手がかり。</figcaption></figure>
-  <div class="point">
-    <ul>
-      <li>右のメニューでキーを変えると、指板はそのままで、<b>形が横に滑って</b>新しいキーの場所へ移ります。形はそのまま、場所だけが変わる——これがこの画面のいちばん大事な見え方です。</li>
-      <li>拡大（右のメニューの − ＋）で、見えるフレットの数を変えられます。</li>
-    </ul>
-  </div>
+  <figure class="close"><img src="img/a1-colors.jpg" alt="C キーのペンタ Box 1 の拡大" loading="lazy"><figcaption>C キーの Box 1。赤い R（C）の場所が、形を覚える手がかりになります。</figcaption></figure>
+
+  <h3>Box を 1 つずつ表示する</h3>
+  <p>ペンタの枠は、よく使う 5 つの押さえる場所（Box 1〜5）です。ネックの下の番号を押すと、その Box の表示・非表示が切り替わります。<b>最初は 1 つだけ出して覚える</b>のが早道です。</p>
+  <figure><video src="img/a2-boxes.mp4" poster="img/a2-boxes.jpg" muted loop playsinline preload="none" aria-label="Box の番号を押して表示を切り替える動画"></video><figcaption>Box 2〜5 を順に押して隠し、また順に戻したところ。番号のボタンは枠と同じ色で、その形の真下にあります。</figcaption></figure>
+
+  <h3>キーを変える</h3>
+  <p>右のメニューでキーを変えると、指板はそのままで、<b>形が横に滑って</b>新しいキーの場所へ移ります。形はそのまま、場所だけが変わる。これがこの画面のいちばん大事な見え方です。</p>
+  <figure><video src="img/s1-key.mp4" poster="img/s1-key.jpg" muted loop playsinline preload="none" aria-label="キーを変えると Box 1 が横に滑る動画"></video><figcaption>Box 1 だけを出して、キーを C → D → E → D → C と変えたところ。</figcaption></figure>
+
+  <h3>拡大する</h3>
+  <p>右のメニューの <b>−</b> <b>＋</b> で、見えるフレットの数（24F・13F・9F・6F）を変えられます。</p>
+  <figure><video src="img/a4-zoom.mp4" poster="img/a4-zoom.jpg" muted loop playsinline preload="none" aria-label="拡大と縮小の動画"></video><figcaption>＋ を 2 回押して 6F まで拡大し、− を 2 回押して 13F に戻したところ。</figcaption></figure>
+
 </article>
 
 <article id="s2">
   <h2><i>2</i>2 段で見比べる — CAGED とペンタ</h2>
-  <p>指板は上下 2 段。下の列のカードの <b>▲</b> で上の段、<b>▼</b> で下の段に出します。2 段はフレットの位置がそろっているので、<b>同じ場所に何があるか</b>を縦に見比べられます。</p>
-  <p>たとえば上に CAGED、下にペンタ/BOX。ペンタの 5 つの Box は、それぞれ CAGED のどれか 1 つのフォームに乗っています（どのキーでも同じ）。そこで同じ場所は同じ色にしています：<span class="sw" style="background:#f0953a"></span>C＝Box 4、<span class="sw" style="background:#f2c94c"></span>A＝Box 5、<span class="sw" style="background:#f285b5"></span>G＝Box 1、<span class="sw" style="background:#a28ae8"></span>E＝Box 2、<span class="sw" style="background:#c99a6b"></span>D＝Box 3。</p>
-  <figure><img src="img/05-caged-penta.jpg" alt="上段 CAGED、下段ペンタを並べた画面" loading="lazy"><figcaption>同じ色が縦にそろいます。CAGED の色は、R・3rd・5th の赤・青・緑と取り違えない色にしてあります。</figcaption></figure>
+  <h3>カードの ▲▼ で段に出す</h3>
+  <p>指板は上下 2 段。下の列のカードの <b>▲</b> で上の段、<b>▼</b> で下の段に出します。いま出ているほうのボタンは緑になります。</p>
+  <figure><video src="img/b1-slots.mp4" poster="img/b1-slots.jpg" muted loop playsinline preload="none" aria-label="カードの ▲▼ で段に出す動画"></video><figcaption>CAGED の ▲ を押して上の段に、ペンタ/BOX の ▼ を押して下の段に出したところ。</figcaption></figure>
+
+  <h3>同じ場所を縦に見比べる</h3>
+  <p>2 段はフレットの位置がそろっているので、<b>同じ場所に何があるか</b>を縦に見比べられます。ペンタの 5 つの Box は、それぞれ CAGED のどれか 1 つのフォームに乗っています（どのキーでも同じ）。そこで同じ場所は同じ色にしています：<span class="sw" style="background:#f0953a"></span>C＝Box 4、<span class="sw" style="background:#f2c94c"></span>A＝Box 5、<span class="sw" style="background:#f285b5"></span>G＝Box 1、<span class="sw" style="background:#a28ae8"></span>E＝Box 2、<span class="sw" style="background:#c99a6b"></span>D＝Box 3。</p>
+  <figure><img src="img/b2-caged-penta.jpg" alt="上段 CAGED、下段ペンタを並べた画面" loading="lazy"><figcaption>同じ色が縦にそろいます。CAGED の色は、R・3rd・5th の赤・青・緑と取り違えない色にしてあります。</figcaption></figure>
+
 </article>
 
 <article id="s3">
   <h2><i>3</i>重ねて 1 枚で見る — スケールMIX</h2>
-  <p>見比べに慣れたら、重ねます。カードの<b>目のアイコン</b>をオンにした表示は、<b>スケールMIX</b> に重なります（最初は CAGED・ペンタ/BOX・トライアド）。</p>
-  <ul>
-    <li>カードの並びが重なりの順です（左ほど手前）。⋮ を掴んで横に動かすと入れ替わります。</li>
-    <li>同じ位置に 2 つ以上の音が来たときは、手前の段が丸を塗り、奥の段は外側の輪になります。輪の色で「この音はペンタの R でもある」が分かります。</li>
-  </ul>
-  <figure><img src="img/06-scalemix.jpg" alt="上段スケールMIX、下段ペンタの画面" loading="lazy"><figcaption>上段にスケールMIX、下段にペンタ/BOX。全部を重ねた図と、その中の 1 つを並べて見られます。</figcaption></figure>
+  <h3>スケールMIX を出す</h3>
+  <p>見比べに慣れたら、重ねます。<b>スケールMIX</b> は、目のアイコンがオンのカードを全部重ねた 1 枚です（最初は CAGED・ペンタ/BOX・トライアド）。上の段にスケールMIX、下の段にその中の 1 枚を出すと、全体と部分を並べて見られます。</p>
+  <figure><img src="img/c0-scalemix.jpg" alt="上段スケールMIX、下段ペンタの画面" loading="lazy"><figcaption>上の段にスケールMIX、下の段にペンタ/BOX。</figcaption></figure>
+
+  <h3>目のアイコンで重ねるものを選ぶ</h3>
+  <p>カードの<b>目のアイコン</b>を押すと、そのカードをスケールMIX に重ねるかどうかが切り替わります。</p>
+  <figure><video src="img/c1-eye.mp4" poster="img/c1-eye.jpg" muted loop playsinline preload="none" aria-label="目のアイコンで重ねるものを切り替える動画"></video><figcaption>CAGED の目をオフにして戻し、次にトライアドの目をオフにして戻したところ。</figcaption></figure>
+
+  <h3>重なる順を変える</h3>
+  <p>カードの並びが重なりの順です（左ほど手前）。カードの上の <b>⋯</b> を押したまま横に動かすと入れ替わります。</p>
+  <figure><video src="img/c2-order.mp4" poster="img/c2-order.jpg" muted loop playsinline preload="none" aria-label="カードを並べ替えて重なり順を変える動画"></video><figcaption>CAGED をペンタ/BOX の右へ動かし、また戻したところ。手前になったほうが丸を塗ります。</figcaption></figure>
+
+  <h3>輪の色を読む</h3>
+  <p>同じ位置に 2 つ以上の音が来たときは、手前の段が丸を塗り、奥の段は外側の輪になります。輪の色で「この音はペンタの R でもある」が分かります。</p>
+  <figure class="close"><img src="img/c3-rings.jpg" alt="スケールMIX の拡大" loading="lazy"><figcaption>塗られているのは手前の CAGED。外側の赤・青・緑の輪は、同じ音がペンタの R・3rd・5th でもあることを示します。</figcaption></figure>
+
 </article>
 
 <article id="s4">
   <h2><i>4</i>コードを見る — ダイアトニックとコードMIX</h2>
+  <h3>ダイアのコードを押す</h3>
   <p><b>ダイア</b>（ダイアトニックコード）のカードを出すと、ネックの下にそのキーの 7 つのコード（C・Dm・Em…）が並びます。ボタンの下の小さい文字（Ⅰ・Ⅱm…）は、キーの中での度数（スケール・ディグリー）。押したコードの<b>押さえ方</b>が、音を順につないだ帯で出ます。帯の色はルートを置く弦（6・5・4 弦）ごとに変わります。</p>
+  <figure><video src="img/d1-dia.mp4" poster="img/d1-dia.jpg" muted loop playsinline preload="none" aria-label="ダイアのコードを順に押す動画"></video><figcaption>下の段にダイアを出して、Dm → Em → F → G → C と押したところ。</figcaption></figure>
+
+  <h3>押さえ方を重ねる — コードMIX</h3>
   <p>ドロップ2・4 度積み・パワー・シェルも同じ作りで、これらは<b>コードMIX</b>に重なります。コードを選ぶボタンは全部の段で同期するので、重ねると必ず同じコードどうし。線の種類で見分けます：太い帯＝ダイア、二重線＝ドロップ2、細い線＝シェル、細い破線＝パワー、点線＝4 度積み。</p>
-  <figure><img src="img/07-chordmix.jpg" alt="コードMIX でダイアと 4 度積みを重ねた画面" loading="lazy"><figcaption>F（Ⅳ）を選んだところ。上段がコードMIX（ダイア＋4 度積み）、下段がダイアだけ。</figcaption></figure>
+  <figure><video src="img/d2-chordmix.mp4" poster="img/d2-chordmix.jpg" muted loop playsinline preload="none" aria-label="コードMIX でコードを切り替える動画"></video><figcaption>上の段にコードMIX、下の段にダイア。F → G → Am → C と押すと、どちらの段も同じコードに切り替わります。</figcaption></figure>
+
 </article>
 
 <article id="s5">
   <h2><i>5</i>スケールと進行を並べる</h2>
-  <p>ここまでの組み合わせです。<b>上の段にペンタ、下の段にコード進行</b>（最初に開いたときの並び）。進行は C – E7 – Am – F – Fm – C。ネックの下のコードを押すと、下の段にそのコードの押さえ方と、ほかの場所の同じ音（小さい丸）が出ます。</p>
-  <p>2 段はフレットがそろっているので、<b>いま押さえているコードのすぐ上で、どのスケールの音が弾けるか</b>がそのまま見えます。コードを押すたびに、前後で共通の音はそのまま、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。</p>
-  <figure><video src="img/s5-prog.mp4" poster="img/s5-prog.jpg" autoplay muted loop playsinline preload="auto" aria-label="進行のコードを順に押していく動画"></video><figcaption>C → E7 → Am → F → Fm → C と順に押したところ。共通の音は残り、ほかの音はゆっくり入れ替わります。</figcaption></figure>
+  <h3>進行のコードを順に押す</h3>
+  <p>ここまでの組み合わせです。<b>上の段にペンタ、下の段にコード進行</b>（最初に開いたときの並び）。進行は C – E7 – Am – F – Fm – C。2 段はフレットがそろっているので、<b>いま押さえているコードのすぐ上で、どのスケールの音が弾けるか</b>がそのまま見えます。</p>
+  <figure><video src="img/e1-prog.mp4" poster="img/e1-prog.jpg" muted loop playsinline preload="none" aria-label="進行のコードを順に押していく動画"></video><figcaption>C → E7 → Am → F → Fm → C と順に押したところ。共通の音は残り、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。</figcaption></figure>
+
+  <h3>押さえ方と、ほかの場所の同じ音</h3>
+  <p>下の段の帯がそのコードの押さえ方です。帯から離れた小さい丸は、同じコードの音がほかにどこにあるかを示します。</p>
+  <figure><img src="img/e2-shapes.jpg" alt="Am を押したときの下の段" loading="lazy"><figcaption>Am を押したところ。</figcaption></figure>
+
 </article>
 
 <article id="s6">
   <h2><i>6</i>キーの外のコード — セカンダリードミナントと借用和音</h2>
   <p>進行にキーの外のコードがあると、ボタンの縁に色が付きます。<span class="sw" style="background:#0aa2b9"></span><b>青緑＝セカンダリードミナント</b>、<span class="sw" style="background:#5b5fd6"></span><b>藍＝借用和音</b>、<span class="sw" style="background:#7d8fa3"></span>灰青＝どちらでもないキー外のコード。押すと、上の段のスケールもそのコードに合わせて変わります。</p>
+  <h3>セカンダリードミナント — E7</h3>
   <p><b>E7（Ⅲ7）</b>：次の Am へ解決するドミナント（V/vi）。鳴らしている間は A を主音に一時転調している、とみて、ヘッダーに「一時転調中！ A harmonic minor」、ネック全体が青緑になります。上の段は A を R として読み替え、<b>G を薄く、G# を青緑の丸で</b>足します。</p>
-  <figure><video src="img/s6-secdom.mp4" poster="img/s6-secdom.jpg" autoplay muted loop playsinline preload="auto" aria-label="E7 を押すと一時転調の色になる動画"></video><figcaption>C → E7 → Am と押したところ。E7 の間だけネックが青緑になり、G が薄れて G# が出ます。ネックの下の説明は 2 行で、上がコードの役割、下がスケール側で変わること。</figcaption></figure>
+  <figure><video src="img/f1-secdom.mp4" poster="img/f1-secdom.jpg" muted loop playsinline preload="none" aria-label="E7 を押すと一時転調の色になる動画"></video><figcaption>C → E7 → Am と押したところ。E7 の間だけネックが青緑になります。</figcaption></figure>
+
+  <h3>ネックの下の説明</h3>
+  <p>キーの外のコードを押すと、ネックの下に説明が 2 行出ます。上の行がコードの役割、下の行がスケール側で変わることです。</p>
+  <figure class="close"><img src="img/f3-note.jpg" alt="E7 を押したときの説明" loading="lazy"><figcaption>E7 を押したときの説明。</figcaption></figure>
+
+  <h3>借用和音 — Fm</h3>
   <p><b>Fm（Ⅳm）</b>：同主短調（C マイナー）から借りてきたコード。キーは C のまま、<b>A を薄く、特徴音 A♭ を藍の丸で</b>足します（C major の A を A♭ に替える＝ C harmonic major）。</p>
-  <figure><img src="img/03-borrowed.jpg" alt="Fm を選んで借用和音を示している画面" loading="lazy"><figcaption>Ⅳ → Ⅳm → Ⅰ は、ポップスでよく出る借用和音の使い方。</figcaption></figure>
+  <figure><video src="img/f2-borrowed.mp4" poster="img/f2-borrowed.jpg" muted loop playsinline preload="none" aria-label="Fm を押すと借用和音の印が出る動画"></video><figcaption>F → Fm → C と押したところ。Ⅳ → Ⅳm → Ⅰ は、ポップスでよく出る借用和音の使い方です。</figcaption></figure>
+
   <div class="point">
     <p><b>どうやって見分けているか</b></p>
     <ul>
@@ -157,25 +200,37 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
     <li><b>いまの進行</b>：押すとそのコードを出します。<b>×</b> で消せます。</li>
     <li><b>コードを足す</b>：ルート（12 個、度数つき）を選んでから、種類（メジャー・マイナー・7th・sus・9th・13th など 20 種類）を押すと、進行の最後に足されます。</li>
   </ol>
-  <figure><img src="img/04-prog-sheet.jpg" alt="進行の編集画面" loading="lazy"><figcaption>点線より上が「消す」、下が「足す」。続けて何個でも足せます。閉じるのは「完了」。</figcaption></figure>
+  <figure><video src="img/g1-add.mp4" poster="img/g1-add.jpg" muted loop playsinline preload="none" aria-label="進行にコードを足して消す動画"></video><figcaption>＋ で開き、ルートの D、種類の D7 と押すと、進行の最後に D7 が足されます。最後に × で消したところ。</figcaption></figure>
+
   <p>押さえ方は、ルートを 6・5・4 弦に置いたバレーの形と、ナット近くの開放コード（C なら x32010、C7 なら x32310 など）。</p>
 </article>
 
 <article id="s8">
   <h2><i>8</i>画面のまわり — カード・右のメニュー・五度圏・保存</h2>
-  <ul>
-    <li><b>カードの色</b>は種類（<span class="sw" style="background:#2f8fb8"></span>音階・<span class="sw" style="background:#c8642e"></span>コード・<span class="sw" style="background:#7a62c9"></span>目印・<span class="sw" style="background:#c23f7c"></span>進行）、<b>名前の下の線</b>はネック上で使う色の見本です。</li>
-    <li>右のメニューには、キー・長調／短調・拡大・五度圏としくみ、その下に<b>いまの上段と下段の名前</b>と、入れ替えボタン（⇅）。</li>
-    <li>下の列は 2 段階でしまえます。1 回目で ▲▼ が隠れ、2 回目で全部隠れます（出すときは 1 回）。横に続きがあるときは、端がぼけて ‹ › のボタンが出ます。</li>
-  </ul>
-  <figure><img src="img/09-cards.jpg" alt="カードの列と右のメニュー" loading="lazy"><figcaption>カードの列（下）と右のメニュー。</figcaption></figure>
-  <figure><video src="img/s8-bar.mp4" poster="img/s8-bar.jpg" autoplay muted loop playsinline preload="auto" aria-label="下の列を 2 段階でしまう動画"></video><figcaption>盤のすぐ下のつまみを押したところ。1 回目で ▲▼ が隠れ、2 回目で全部隠れ、3 回目で全部戻ります。</figcaption></figure>
-  <p><b>五度圏としくみ</b>（右のメニュー）：五度圏は外から長調のキー／度数／平行短調／度数、真ん中にいまのキー。光っている 6 つが、そのキーのダイアトニック・コードです。上の「キー」に切り替えると、各キーの ♯・♭ の数と、そのキーで新しく増える音が出ます。時計回りに 1 つ進むごとに ♯ が「ファドソレラシミ」（F C G D A E B）の順に 1 つずつ増え、反時計回りでは ♭ が「シミラレソドファ」（B E A D G C F）の順に増えます。下の「コードの種類が決まるしくみ」は、なぜ Ⅰ は maj7、Ⅴ は 7th、Ⅶ は m7♭5 になるのかを 1 枚で見せる図です。</p>
-  <figure><img src="img/08-circle.jpg" alt="五度圏としくみの窓" loading="lazy"><figcaption>窓は掴んで動かせます。輪をタップするとキーが変わります。</figcaption></figure>
+  <h3>カードの色</h3>
+  <p><b>カードの色</b>は種類です。<span class="sw" style="background:#2f8fb8"></span>音階・<span class="sw" style="background:#c8642e"></span>コード・<span class="sw" style="background:#7a62c9"></span>目印・<span class="sw" style="background:#c23f7c"></span>進行。<b>名前の下の線</b>は、ネック上で使う色の見本です。横に続きがあるときは、端がぼけて ‹ › のボタンが出ます。</p>
+  <figure><img src="img/h1-cards.jpg" alt="下の列のカード" loading="lazy"><figcaption>左から目印・音階・進行・コードのカード。</figcaption></figure>
+
+  <h3>上段と下段を入れ替える</h3>
+  <p>右のメニューの下に、<b>いまの上段と下段の名前</b>があります。間の <b>⇅</b> を押すと、上下が入れ替わります。</p>
+  <figure><video src="img/h2-swap.mp4" poster="img/h2-swap.jpg" muted loop playsinline preload="none" aria-label="上段と下段を入れ替える動画"></video><figcaption>⇅ を押して入れ替え、もう一度押して戻したところ。</figcaption></figure>
+
+  <h3>下の列をしまう</h3>
+  <p>盤のすぐ下のつまみで、下の列を 2 段階でしまえます。1 回目で ▲▼ が隠れ、2 回目で全部隠れます。出すときは 1 回です。</p>
+  <figure><video src="img/h3-bar.mp4" poster="img/h3-bar.jpg" muted loop playsinline preload="none" aria-label="下の列を 2 段階でしまう動画"></video><figcaption>つまみを 3 回押したところ。</figcaption></figure>
+
+  <h3>五度圏としくみ</h3>
+  <p>右のメニューの<b>五度圏としくみ</b>で開きます。五度圏は外から長調のキー／度数／平行短調／度数、真ん中にいまのキー。光っている 6 つが、そのキーのダイアトニック・コードです。輪をタップするとキーが変わります。</p>
+  <p>「キー」に切り替えると、各キーの ♯・♭ の数と、そのキーで新しく増える音が出ます。時計回りに 1 つ進むごとに ♯ が「ファドソレラシミ」（F C G D A E B）の順に 1 つずつ増え、反時計回りでは ♭ が「シミラレソドファ」（B E A D G C F）の順に増えます。下の「コードの種類が決まるしくみ」は、なぜ Ⅰ は maj7、Ⅴ は 7th、Ⅶ は m7♭5 になるのかを 1 枚で見せる図です。</p>
+  <figure><video src="img/h4-circle.mp4" poster="img/h4-circle.jpg" muted loop playsinline preload="none" aria-label="五度圏で ♯ と ♭ が増える順を見る動画"></video><figcaption>「キー」に切り替えて G → D → A と押すと ♯ が 1 つずつ増え、F → B♭ → E♭ と押すと ♭ が 1 つずつ増えます。</figcaption></figure>
+
+  <h3>表示設定と保存</h3>
+  <p>右下の「表示設定」で丸の文字（音名／度数／両方）を選べます。<b>いまの設定を保存</b>しておけばあとで呼び出せ、<b>初期状態に戻す</b>で最初の並びに戻ります。保存先は<b>この端末のブラウザの中だけ</b>です。</p>
+  <figure><img src="img/h5-settings.jpg" alt="表示設定の画面" loading="lazy"><figcaption>表示設定。</figcaption></figure>
+
   <div class="point">
     <ul>
       <li>赤・青・緑は R・3rd・5th だけの色。キーの外は寒色（青緑＝一時転調、藍＝借用和音の特徴音）。</li>
-      <li>右下の「表示設定」で丸の文字（音名／度数／両方）を選べます。<b>いまの設定を保存</b>しておけばあとで呼び出せ、<b>初期状態に戻す</b>で最初の並びに戻ります。保存先は<b>この端末のブラウザの中だけ</b>です。</li>
       <li>迷ったら、ヘッダーの「使い方」で画面の案内（ツアー）をいつでも呼び出せます。</li>
     </ul>
   </div>
@@ -194,7 +249,7 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
 // 動画は画面に入ったら再生、外れたら止める。自動再生を断られる環境（省電力モードなど）では再生ボタンを出す
 (function () {
   var vs = document.querySelectorAll('video');
-  if (!('IntersectionObserver' in window)) return;
+  if (!('IntersectionObserver' in window)) { vs.forEach(function (v) { v.controls = true; }); return; }
   var io = new IntersectionObserver(function (es) {
     es.forEach(function (e) {
       var v = e.target;
