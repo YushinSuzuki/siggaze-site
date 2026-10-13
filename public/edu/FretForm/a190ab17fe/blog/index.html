@@ -169,14 +169,24 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
   <h3>コード進行のコードを順に押す</h3>
   <p><b>上の段にペンタ、下の段にコード進行</b>（最初に開いたときの並び）。最初に入っている進行 C – E7 – Am – F – Fm – C は、使い方を見るための例です。7 章の方法で自分の曲の進行に作り替えられます。</p>
   <p>2 段はフレットがそろっているので、<b>いま押さえているコードのすぐ上で、どのスケールの音が弾けるか</b>がそのまま見えます。キーの中のコード（ダイアトニック・コード）なら、弾けるのは<b>キーのペンタのまま</b>です。C – Am – F なら、どれも C のペンタで弾けます。キーの外のコードでは、6 章のようにスケールが転調したり、特徴音が示されたりします。</p>
-  <figure><video src="img/e1-prog.mp4" poster="img/e1-prog.jpg" muted loop playsinline preload="none" aria-label="コード進行のコードを順に押していく動画"></video><figcaption>C → E7 → Am → F → Fm → C と順に押したところ。共通の音は残り、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。</figcaption></figure>
+  <figure><video src="img/e1-prog.mp4" poster="img/e1-prog.jpg" muted loop playsinline preload="none" aria-label="コード進行のコードを順に押していく動画"></video><figcaption>C → E7 → Am → F → Fm → C と順に押したところ（リンクはオン）。共通の音は残り、消える音はゆっくり薄く、新しい音はゆっくり濃くなります。</figcaption></figure>
+
+  <h3>コードとスケールをリンクする</h3>
+  <p>コード進行が上段か下段に出ているあいだ、右のメニューに<b>リンク</b>のボタンが出ます。リンクをオンにすると、コード進行で押したコードに合わせて、スケールの段が変わります。</p>
+  <ul>
+    <li>キーの中のコード：ペンタの形はキーのまま、丸の数字がそのコードの R から数えた度数になります（キー C で Am なら A＝R、C＝♭3、E＝5）。</li>
+    <li>キーの外のコード：6 章のように、一時転調したり特徴音が示されたりします。</li>
+  </ul>
+  <p>リンクを切ると、キーのスケールに戻ります。コード進行を段に出したときは、リンクの案内が出ます。</p>
+  <figure><video src="img/e3-link.mp4" poster="img/e3-link.jpg" muted loop playsinline preload="none" aria-label="リンクをオン・オフする動画"></video><figcaption>Am でリンクをオンにすると数字が Am 基準に、E7 を押すと一時転調。リンクを切るとキー C のペンタに戻ります。</figcaption></figure>
+  <figure><img src="img/e4-popup.jpg" alt="コード進行を段に出したときの案内" loading="lazy"><figcaption>コード進行を段に出したときの案内。「今後は表示しない」を付けて OK を押すと、右のメニューのリンクボタンの場所を示してから閉じます。</figcaption></figure>
 
 
 </article>
 
 <article id="s6">
   <h2><i>6</i>キーの外のコード — セカンダリードミナントと借用和音</h2>
-  <p>進行にキーの外のコードがあると、ボタンの縁に色が付きます。<span class="sw" style="background:#0aa2b9"></span><b>青緑＝セカンダリードミナント</b>、<span class="sw" style="background:#5b5fd6"></span><b>藍＝借用和音</b>、<span class="sw" style="background:#7d8fa3"></span>灰青＝どちらでもないキー外のコード。押すと、上の段のスケールもそのコードに合わせて変わります。</p>
+  <p>進行にキーの外のコードがあると、ボタンの縁に色が付きます。<span class="sw" style="background:#0aa2b9"></span><b>青緑＝セカンダリードミナント</b>、<span class="sw" style="background:#5b5fd6"></span><b>藍＝借用和音</b>、<span class="sw" style="background:#7d8fa3"></span>灰青＝どちらでもないキー外のコード。リンクがオンのときに押すと、上の段のスケールもそのコードに合わせて変わります。</p>
   <p>最初の進行には、例としてキーの外のコードを 2 つ入れてあります（E7 と Fm）。セカンダリードミナントや借用和音になるのは E7 や Fm に限りません。どのコードがそうなるかは、キーと、進行の中での前後のつながりで決まります。自分で入れた進行でも、同じように判定して色が付きます。</p>
   <h3>セカンダリードミナント — 例：E7</h3>
   <p>例の <b>E7（Ⅲ7）</b>は、この進行では次の Am へ解決するドミナント（V/vi）です。鳴らしている間は A を主音に一時転調している、とみて、ヘッダーに「一時転調中！ A harmonic minor」、ネック全体が青緑になります。上の段は A を R として読み替え、<b>G を薄く、G# を青緑の丸で</b>足します。</p>
@@ -187,7 +197,7 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
   <figure class="close"><img src="img/f3-note.jpg" alt="E7 を押したときの説明" loading="lazy"><figcaption>例の E7 を押したときの説明。</figcaption></figure>
 
   <h3>借用和音 — 例：Fm</h3>
-  <p>例の <b>Fm（Ⅳm）</b>は、同主短調（C マイナー）から借りてきたコードです。キーは C のまま、<b>A を薄く、特徴音 A♭ を藍の丸で</b>足します（C major の A を A♭ に替える＝ C harmonic major）。</p>
+  <p>例の <b>Fm（Ⅳm）</b>は、同主短調（C マイナー）から借りてきたコードです。キーは C のまま、<b>A を薄く、特徴音 A♭ を藍の輪つきの丸で</b>足します（C major の A を A♭ に替える＝ C harmonic major）。丸の数字は Fm の R から数えた度数になり、A♭ は Fm の ♭3 として 3rd の色（藍に寄せた青）で塗られます。</p>
   <figure><video src="img/f2-borrowed.mp4" poster="img/f2-borrowed.jpg" muted loop playsinline preload="none" aria-label="Fm を押すと借用和音の印が出る動画"></video><figcaption>F → Fm → C と押したところ。Ⅳ → Ⅳm → Ⅰ は、ポップスでよく出る借用和音の使い方です。</figcaption></figure>
 
   <div class="point">
@@ -225,7 +235,7 @@ footer{max-width:860px;margin:0 auto;padding:0 18px 60px;color:var(--faint);font
   <figure><img src="img/h1-cards.jpg" alt="下の列のカード" loading="lazy"><figcaption>左から紫（目印）・青（スケール）・桃（コード進行）・橙（コード）のカード。</figcaption></figure>
 
   <h3>上段と下段を入れ替える</h3>
-  <p>右のメニューの下に、<b>いまの上段と下段の名前</b>があります。間の <b>⇅</b> を押すと、上下が入れ替わります。</p>
+  <p>右のメニューの下に、<b>いまの上段と下段の名前</b>があります。間の <b>⇅</b> を押すと、上下が入れ替わります。コード進行が段に出ているときは、その下に<b>リンク</b>のボタンも出ます（5 章）。</p>
   <figure><video src="img/h2-swap.mp4" poster="img/h2-swap.jpg" muted loop playsinline preload="none" aria-label="上段と下段を入れ替える動画"></video><figcaption>⇅ を押して入れ替え、もう一度押して戻したところ。</figcaption></figure>
 
   <h3>下の列をしまう</h3>
