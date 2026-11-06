@@ -26,6 +26,15 @@
           "value": "noindex, nofollow"
         }
       ]
+    },
+    {
+      "source": "/edu/FretForm/a190ab17fe/sw.js",
+      "headers": [
+        {
+          "key": "Service-Worker-Allowed",
+          "value": "/edu/FretForm/"
+        }
+      ]
     }
   ]
 }
